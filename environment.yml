@@ -33,7 +33,6 @@ dependencies:
   - langchain-core=0.3.54=pyhd8ed1ab_0
   - langchain-openai=0.3.13=pyhd8ed1ab_0
   - langgraph=0.3.31=pyhd8ed1ab_0
-  - langgraph-checkpoint=2.0.21=pyhd8ed1ab_0
   - langgraph-prebuilt=0.1.8=pyhd8ed1ab_0
   - langgraph-sdk=0.1.61=pyhd8ed1ab_0
   - langsmith=0.1.147=py312hca03da5_0
@@ -81,9 +80,14 @@ dependencies:
   - pip:
       - alembic==1.15.2
       - bidict==0.23.1
+      - blockbuster==1.5.24
       - build==1.2.2.post1
+      - cffi==1.17.1
+      - cloudpickle==3.1.1
+      - cryptography==44.0.2
       - docutils==0.21.2
       - fastapi==0.115.12
+      - forbiddenfruit==0.1.4
       - granian==2.2.3
       - gunicorn==23.0.0
       - id==1.5.0
@@ -91,7 +95,12 @@ dependencies:
       - jaraco-context==6.0.1
       - jaraco-functools==4.1.0
       - jinja2==3.1.6
+      - jsonschema-rs==0.29.1
       - keyring==25.6.0
+      - langgraph-api==0.1.9
+      - langgraph-checkpoint==2.0.24
+      - langgraph-cli==0.2.5
+      - langgraph-runtime-inmem==0.0.4
       - lazy-loader==0.4
       - mako==1.3.9
       - markdown-it-py==3.0.0
@@ -99,9 +108,12 @@ dependencies:
       - mdurl==0.1.2
       - more-itertools==10.6.0
       - nh3==0.2.21
+      - ormsgpack==1.9.1
       - platformdirs==4.3.7
       - psutil==7.0.0
+      - pycparser==2.22
       - pygments==2.19.1
+      - pyjwt==2.10.1
       - pyproject-hooks==1.2.0
       - python-engineio==4.11.2
       - python-multipart==0.0.20
@@ -116,8 +128,10 @@ dependencies:
       - simple-websocket==1.1.0
       - sqlalchemy==2.0.40
       - sqlmodel==0.0.24
+      - sse-starlette==2.1.3
       - starlette==0.46.1
       - starlette-admin==0.14.1
+      - structlog==25.2.0
       - tabulate==0.9.0
       - tomlkit==0.13.2
       - twine==6.1.0
