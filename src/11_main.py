@@ -31,3 +31,13 @@ chromadb_manager = ChromaDBManager()
 uuids = [str(uuid4()) for _ in range(len(texts))]
 metadatas = [{'filename': str(PRODUCTS_PDF_PATH)} for _ in range(len(texts))]
 
+# Creating embeddings
+chromadb_manager.store(
+    texts=texts,
+    ids=uuids,
+    metadatas=metadatas
+)
+
+print(chromadb_manager.find(
+    metadata={'filename': str(PRODUCTS_PDF_PATH)}
+))

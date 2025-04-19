@@ -260,3 +260,6 @@ $RECYCLE.BIN/
 .vscode/*
 # except for the following files
 !.vscode/launch.json
+
+# Ignnore  db
+data/db/*
