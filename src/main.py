@@ -8,8 +8,6 @@ from uuid import uuid4
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import PromptTemplate
 
-
-
 api_key = settings['openai']
 model = 'gpt-4o-mini'
 llm = ChatOpenAI(api_key=api_key, model=model)
