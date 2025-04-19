@@ -47,7 +47,12 @@ class ChromaDBManager:
         metadata: dict,
         k: int = 2,
     ):
-        ...
+        result = self.vectorstore.similarity_search(
+            query=query,
+            k=k,
+            filter=metadata,
+        )
+        return result
 
     def drop(
         self,
