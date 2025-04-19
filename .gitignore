@@ -255,3 +255,8 @@ $RECYCLE.BIN/
 # User-specific stuff
 .langgraph_api
 /data/raw/file.pdf
+
+# ignore all files in the .vscode folder
+.vscode/*
+# except for the following files
+!.vscode/launch.json

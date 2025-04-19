@@ -1,0 +1,26 @@
+[project]
+name = "edt-langchain-ai"
+version = "0.1.0"
+description = "LangChain app using LangGraph and OpenAI"
+authors = [
+    { name = "Jason", email = "jasonssdev@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "openai",
+    "langchain",
+    "langgraph",
+    "pydantic",
+    "python-dotenv"
+]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
